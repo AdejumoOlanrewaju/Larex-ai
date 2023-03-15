@@ -27,7 +27,7 @@ export default function Createposts (){
       if(form.prompt){
         try{
             setGeneratingImg(true)
-            const response = await fetch("http://localhost:8080/api/v1/larexai", {
+            const response = await fetch("https://larex-ai.onrender.com/api/v1/larexai", {
               method : "POST",
               headers : {
                 "Content-Type" : "application/json"
@@ -57,7 +57,7 @@ export default function Createposts (){
       setLoading(true)
 
       try{
-          const response = await fetch("http://localhost:8080/api/v1/posts", {
+          const response = await fetch("https://larex-ai.onrender.com/api/v1/posts", {
             method : "POST",
             headers : {
               "Content-Type" : "application/json"

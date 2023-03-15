@@ -28,7 +28,7 @@ export default function Home (){
         setLoading(true)
 
         try{
-            const response = await fetch("http://localhost:8080/api/v1/posts", {
+            const response = await fetch("https://larex-ai.onrender.com/api/v1/posts", {
               method : "GET",
               headers : {
                 "Content-Type" : "application/json"
@@ -56,7 +56,7 @@ export default function Home (){
     setSearchTimeout(
       setTimeout(() => {
         const searchResults = allPosts.filter((item) => {
-          item.name.toLowerCase().includes(searchText.toLowerCase()) || item.prompt.toLowerCase().includes(searchText.toLowerCase())
+         return item.name.toLowerCase().includes(searchText.toLowerCase()) || item.prompt.toLowerCase().includes(searchText.toLowerCase())
         })
         console.log(searchResults)
            setSearchedResults(searchResults)
