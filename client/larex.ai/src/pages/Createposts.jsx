@@ -27,7 +27,7 @@ export default function Createposts (){
       if(form.prompt){
         try{
             setGeneratingImg(true)
-            const response = await fetch("https://larex-ai.onrender.com/api/v1/larexai", {
+            const response = await fetch("https://larex-ai.onrender.com/api/v1/larex", {
               method : "POST",
               headers : {
                 "Content-Type" : "application/json"
@@ -36,6 +36,7 @@ export default function Createposts (){
             })
 
             const data = await response.json()
+            console.log(response)
             console.log(data)
             // make sure there is no space in between this url : `data:image/jpeg;base64,${data.photo}`
             setForm({...form, photo : `data:image/jpeg;base64,${data.photo}`})
