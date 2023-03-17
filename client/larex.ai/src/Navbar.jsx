@@ -9,7 +9,8 @@ export default function (){
         <span className="logo-text">Larex.Ai</span>
       </Link>
       <ul className = "links-container">
-        <li><Link className = "links" to = "/"> Home</Link></li>
+        <li><Link className = "links" to = "/">Home</Link></li>
+        {/* <li><Link className = "links" to = "/community"> Community</Link></li> */}
         <li><Link className = "links create-btn" to = "/createPosts">Create</Link></li>
       </ul>
     </nav>

@@ -36,6 +36,9 @@ nav{
   color : black;
   align-items : center;
   justify-content : space-between;
+  position : sticky;
+  top : 0;
+  z-index : 99999;
 }
 
 .logo-link{
@@ -92,7 +95,7 @@ main{
   min-height : calc(100vh - 50px)
 }
 
-.home-section{
+.community-section{
   max-width : 1200px;
   margin : 0 auto;
   padding : 20px;
@@ -107,7 +110,7 @@ main{
   font-size : 14px;
   color : #666e75;
   max-width : 500px;
-  margin-top : 5px;
+  margin-top : 15px;
 }
 
 .form-container{
@@ -188,7 +191,7 @@ main{
 }
 
 .input-wrapper{
-  margin-top : 20px;
+  margin-top : 10px;
 }
 
 
