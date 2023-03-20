@@ -114,6 +114,50 @@ main{
   background-blend-mode: darken;
 }
 
+
+.home-header-text-container{
+  width: 60%;
+  padding-top: 150px;
+  padding-left: 60px;
+}
+
+.home-header-title,
+.home-header-subtitle{
+  color : white;
+}
+
+.home-header-title{
+  font-size : 4.2rem;
+  color: #dad7d7;
+}
+
+.home-header-subtitle{
+  color: #e8e0e0;
+  line-height: 2;
+  width: 90%;
+  margin-top: 18px;
+  font-size: 1.1rem;
+
+}
+
+.home-header-cta{    
+  background: linear-gradient(45deg, #3e02cf, #ca2222);
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  width: 50%;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.home-header-cta:active{
+  transform: scale(0.8);
+  opacity: .7;
+}
+
 .home-main{
   background-color :rgb(60, 44, 181);
   height : 100vh
@@ -326,7 +370,7 @@ main{
 }
 
 .submit-btn:active{
-  transform : scale(0.7);
+  transform : scale(0.8);
   background : rgb(6, 6, 55);
 }
 
@@ -481,24 +525,23 @@ main{
   .section-head {
     font-weight: 800;
     font-size: 52px;
-}
+  }
 
-.section-text {
-    font-size: 17px;
-    color: #666e75;
-    max-width: 500px;
-    margin-top: 15px;
-    margin-bottom: 0px;
-}
+  .section-text {
+      font-size: 17px;
+      color: #666e75;
+      max-width: 500px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+  }
 
-.form-container{
-    margin-top : 0;
-}
+  .form-container{
+      margin-top : 0;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
     background-color: #ffffff;
   }
 }
