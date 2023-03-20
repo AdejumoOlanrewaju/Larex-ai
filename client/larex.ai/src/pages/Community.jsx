@@ -58,7 +58,6 @@ export default function Community (){
         const searchResults = allPosts.filter((item) => {
          return item.name.toLowerCase().includes(searchText.toLowerCase()) || item.prompt.toLowerCase().includes(searchText.toLowerCase())
         })
-        console.log(searchResults)
            setSearchedResults(searchResults)
       }, 500)
     )

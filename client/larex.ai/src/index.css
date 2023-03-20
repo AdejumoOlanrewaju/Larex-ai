@@ -95,6 +95,30 @@ main{
   min-height : calc(100vh - 50px)
 }
 
+.home{
+  scroll-snap-type: y mandatory;
+}
+
+.home-header,
+.home-main{
+  scroll-snap-align: center;
+}
+
+.home-header{
+  background-image : url("./assets/ai-bg.jpg");
+  height : 100vh;
+  background-size: cover;
+  background-repeat : no-repeat;
+  background-position : center;
+  background-color  : rgba(0,0,0,.5);
+  background-blend-mode: darken;
+}
+
+.home-main{
+  background-color :rgb(60, 44, 181);
+  height : 100vh
+}
+
 .community-section{
   max-width : 1200px;
   margin : 0 auto;
@@ -316,7 +340,7 @@ main{
 
 .share-text{    
   font-size : 14px;
-  color : rgb(107, 105, 105)
+  color : rgb(57 55 55);
 }
 
 .share-btn{
@@ -453,6 +477,23 @@ main{
     grid-column: span 2;
     grid-row: span 2;
   }
+
+  .section-head {
+    font-weight: 800;
+    font-size: 52px;
+}
+
+.section-text {
+    font-size: 17px;
+    color: #666e75;
+    max-width: 500px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.form-container{
+    margin-top : 0;
+}
 }
 
 @media (prefers-color-scheme: light) {

@@ -70,8 +70,8 @@ export default function Createposts (){
           if(response.ok){
             navigate('/')
           }
-          console.log(form)
-          console.log(response)
+          // console.log(form)
+          // console.log(response)
       }catch(error){
         alert(error)
 
@@ -142,7 +142,7 @@ export default function Createposts (){
           </div>
 
           <div className = "share-container">
-            <p className = "share-text">Once you have generated the image, you can share it with others if you like.</p>
+            <p className = "share-text">Once you have generated the image, click on the share button to view the image at a larger scale and download to share with others</p>
             <button type = "submit"
                       onClick = {handleSubmit} 
                     className = "share-btn">{
